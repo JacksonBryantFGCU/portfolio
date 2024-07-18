@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         sass: "#cc6699",
+        accent: "#6487E3",
       },
     },
   },
