@@ -3,7 +3,7 @@ import profilePic from "../assets/kevinRushProfile.png";
 import { motion } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import pdf from "../assets/Jackson Bryant Resume.pdf";
+import pdf from "../assets/Jackson Bryant Resume 2024.pdf";
 
 // Framer Motion Animation Function
 const container = (delay) => ({
@@ -33,7 +33,7 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-yellow-300 via-emerald-500 to-accent bg-clip-text text-3xl tracking-tight text-transparent"
             >
               Front End Developer
             </motion.span>
@@ -51,7 +51,7 @@ const Hero = () => {
               animate="visible"
               className=" bg-slate-800 h-20 w-48 text-center rounded-xl hover:bg-slate-500"
             >
-              <a href={pdf} download="Jackson Bryant Resume.pdf">
+              <a href={pdf} download="Jackson Bryant Resume 2024.pdf">
                 Download Resume
               </a>
             </motion.button>

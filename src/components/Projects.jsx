@@ -38,20 +38,26 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
+              className="w-full max-w-xl lg:w-3/4 bg-[#15181F] p-5 rounded-lg max-sm:text-wrap"
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-                <a href={project.demo} target="_blank" className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-neutral-400 hover:text-purple-900 max-sm:text-nowrap max-sm:text-xs">View Project</a>
-                <a href={project.github} target="_blank" className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-neutral-400 hover:text-purple-900 max-sm:text-nowrap max-sm:text-xs">View Github</a>
+              <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 2 }}
+              >
+                <a href={project.demo} target="_blank" className="rounded px-2 py-1 text-sm font-medium text-white hover:text-accent max-sm:text-nowrap max-sm:text-xs mr-0 -ml-2">Demo</a>
+                <a href={project.github} target="_blank" className="mr-2 rounded px-2 py-1 text-sm font-medium text-white hover:text-accent max-sm:text-nowrap max-sm:text-xs max-sm:mr-0">Github</a>
               {project.skills.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 max-sm:text-wrap max-sm:text-xs"
+                  className="mr-2 rounded px-2 py-1 text-sm font-medium text-accent max-sm:text-wrap max-sm:text-xs max-sm:m-0"
                 >
                   {tech}
                 </span>
               ))}
+              </motion.div>
             </motion.div>
           </div>
         ))}

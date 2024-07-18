@@ -13,32 +13,32 @@ const Navbar = () => {
       <div>
         <ul className="hidden lg:flex lg:flex-row lg:text-xl mr-10">
           <li>
-            <a className="m-10 hover:underline md:m-5" href="#">
+            <a className="m-10 hover:text-accent md:m-5" href="#">
               Home
             </a>
           </li>
           <li>
-            <a href="/#about" className="m-10 md:m-5 hover:underline">
+            <a href="/#about" className="m-10 md:m-5 hover:text-accent">
               About
             </a>
           </li>
           <li>
-            <a href="/#tech" className="m-10 hover:underline md:m-5">
+            <a href="/#tech" className="m-10 hover:text-accent md:m-5">
               Tech
             </a>
           </li>
           <li>
-            <a href="/#experiences" className="m-10 hover:underline md:m-5">
+            <a href="/#experiences" className="m-10 hover:text-accent md:m-5">
               Experiences
             </a>
           </li>
           <li>
-            <a href="/#projects" className="m-10 hover:underline md:m-5">
+            <a href="/#projects" className="m-10 hover:text-accent md:m-5">
               Projects
             </a>
           </li>
           <li>
-            <a href="/#contact" className="m-10 hover:underline md:m-5">
+            <a href="/#contact" className="m-10 hover:text-accent md:m-5">
               Contact
             </a>
           </li>

@@ -24,7 +24,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
+              className="w-full max-w-xl lg:w-3/4 bg-[#15181F] p-5 rounded-lg"
             >
               <h6 className="mb-2 font-semibold">
                 {experience.role} -{""}
@@ -46,7 +46,7 @@ const Experience = () => {
               {experience.skills.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                  className="mr-2 mt-4 rounded px-2 py-1 text-sm font-medium text-accent"
                 >
                   {tech}
                 </span>
