@@ -31,7 +31,7 @@ const Projects = () => {
                 width={200}
                 height={250}
                 alt={project.title}
-                className="mb-6 rounded hover:scale-150"
+                className="max-sm:ml-[75px] mb-6 rounded hover:scale-150 max-sm:hover:scale-125"
               />
             </motion.div>
             <motion.div
