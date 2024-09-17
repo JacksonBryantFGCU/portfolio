@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/Linkedin Photo.jpg";
 import { motion } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -27,7 +27,7 @@ const Hero = () => {
               animate="visible"
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl max-sm:w-96 max-sm:text-center"
             >
-              Jackson Bryant
+            Jackson Bryant
             </motion.h1>
             <motion.span
               variants={container(0.5)}
@@ -65,7 +65,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 1.2 }}
               src={profilePic}
               alt="Jackson Bryant"
-              className="max-sm:hidden"
+              className="max-sm:hidden rounded-md"
             />
           </div>
         </div>
